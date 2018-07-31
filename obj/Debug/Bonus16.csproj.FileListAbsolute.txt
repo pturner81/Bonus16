@@ -1,0 +1,7 @@
+c:\users\patrick\source\repos\Bonus16\Bonus16\bin\Debug\Bonus16.exe.config
+c:\users\patrick\source\repos\Bonus16\Bonus16\bin\Debug\Bonus16.exe
+c:\users\patrick\source\repos\Bonus16\Bonus16\bin\Debug\Bonus16.pdb
+c:\users\patrick\source\repos\Bonus16\Bonus16\obj\Debug\Bonus16.csprojAssemblyReference.cache
+c:\users\patrick\source\repos\Bonus16\Bonus16\obj\Debug\Bonus16.csproj.CoreCompileInputs.cache
+c:\users\patrick\source\repos\Bonus16\Bonus16\obj\Debug\Bonus16.exe
+c:\users\patrick\source\repos\Bonus16\Bonus16\obj\Debug\Bonus16.pdb
