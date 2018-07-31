@@ -35,5 +35,23 @@ namespace Bonus16
             set { price = value; }
             get { return price; }
         }
+        //default constructor
+        public Cars()
+        {
+            Make = "unassigned";
+            Model = "unassigned";
+            Year = 2000;
+            Price= 0;
+        }
+        //override constructor
+        public Cars(string ma, string mo, int ye, double pr)
+        {
+            Make = ma;
+            Model = mo;
+            Year = ye;
+            Price = pr;
+        }
+        //methods
+
     }
 }

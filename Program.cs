@@ -14,20 +14,22 @@ namespace Bonus16
             string x = "y";
             while (x == "y")
             {
-                Cars temp = new Cars();
                 Console.WriteLine("Please provide the car make:");
-                temp.Make = ValidateString(Console.ReadLine());
+                string Make = ValidateString(Console.ReadLine());
 
                 Console.WriteLine("Please provide the car model:");
-                temp.Model = ValidateString(Console.ReadLine());
+                string Model = ValidateString(Console.ReadLine());
 
                 Console.WriteLine("Please provide the car year:");
-                temp.Year = ValidateInt(Console.ReadLine());
+                int Year = ValidateInt(Console.ReadLine());
 
                 Console.WriteLine("Please provide the car price:");
-                temp.Price = ValidateFloat(Console.ReadLine());
+                double Price = ValidateFloat(Console.ReadLine());
 
+                Cars temp = new Cars(Make, Model, Year, Price);
                 cars.Add(temp);
+
+
 
                 Console.WriteLine("Would you like to add another car? (type 'y' if yes)");
                 if (ValidateString(Console.ReadLine()) != "y")
@@ -53,16 +55,16 @@ namespace Bonus16
             int x = 1;
             foreach (Cars c in cars)
             {
-                Console.Write($"{x})    {c.Year}".PadRight(13));
+                Console.Write($"{x})   {c.Year}".PadRight(13));
                 Console.Write(c.Make.PadRight(10));
                 Console.Write(c.Model.PadRight(10));
                 Console.WriteLine($"${c.Price}");
                 x = x + 1;
-                Console.WriteLine("=====================================");
+                Console.WriteLine("=========================================");
             }
         }
         public static int ValidateInt(string UserInput1)
-        {
+        {//Extended Chalenge
             try
             {
                 int.Parse(UserInput1);
@@ -80,7 +82,7 @@ namespace Bonus16
             }
         }
         public static float ValidateFloat(string UserInput1)
-        {
+        {//Extended Chalenge
             try
             {
                 float.Parse(UserInput1);
@@ -98,7 +100,7 @@ namespace Bonus16
             }
         }
         public static string ValidateString(string UserInput)
-        {
+        {//Extended Chalenge
             try
             {
                 UserInput = UserInput.ToLower();
